@@ -34,21 +34,26 @@
 .homeContainer {
     text-align: center;
 }
-
+.title {
+    color: #9daeb3;
+    font-size: xx-large;
+}
 .button {
     display: inline-block;
     margin-top: 30px;
     padding: 20px;
     text-align: center;
-    background-color: #C4DFE6;
+    background-color: #cccccc;
     text-decoration: none;
     color: #003B46;
     font-weight: bolder;
+    border: 5px solid #003B46;
 }
 
 .button:hover {
     border: 5px solid #07575B;
-    background-color: transparent;
+    background-color: #aaaaaaad;
+    color: #ffffff;
 }
 
 footer {
