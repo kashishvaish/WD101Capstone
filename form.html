@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/form.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+
+        <h2 class="heading">Survey Form</h2>
+        <div class="notification" id="notification">
+            <div id="notificationBody"></div>
+            <div class="notificationClose" id="notificationClose">X</div>
+        </div>
+        <form id="user_form" class="form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+        
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" required>
+            <p class="dobError" id="dobError"></p>
+        
+            <input type="checkbox" id="acceptTerms" name="acceptTerms" class="checkbox">
+            <label for="acceptTerms">Accept Terms & Conditions</label>
+            
+            <input type="submit" value="ADD" class="addButton" id="add"/>
+        </form>
+
+        <h2 class="heading">Entries</h2>
+
+        <div id="user-entries"></div>
+    
+    </div>
+
+    <footer class="footer">
+        <div class="about" id="about">
+            <div class="footerHeading">ABOUT</div>
+            <div class="aboutBody">Hi! I'm <span class="name">Kashish Vaish</span>. I'm a passionate programmer and a curious learner!</div>
+        </div>
+        <div class="contact" id="contact">
+            <div class="footerHeading">CONTACT ME AT</div>
+            <div class="contactBody">
+                <a href="https://www.linkedin.com/in/kashish-vaish-1b6475191/"><img src="images/linkedin.png" width="40"></a>
+                <a href="mailto:kashishvaish.kv@gmail.com"><img src="images/gmail.png" width="50"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
