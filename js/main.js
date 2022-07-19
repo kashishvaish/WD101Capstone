@@ -89,6 +89,10 @@ const saveUserForm = (event) => {
   localStorage.setItem("user-entries", JSON.stringify(userEntries));
   document.getElementById("notificationBody").innerHTML = "Added Successfully!";
   document.getElementById("notification").style.visibility = "visible";
+  const inputs = document.querySelectorAll('#name, #email, #password, #dob, #acceptTerms');
+  inputs.forEach(input => {
+    input.value = '';
+  });
   displayEntries();
 };
 
