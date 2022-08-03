@@ -1,11 +1,3 @@
-input:invalid {
-    border: 1px solid red;
-}
-  
-input:valid {
-    border: 1px solid black;
-}
-
 table {
     width: 90%;
     margin: auto;
@@ -70,8 +62,4 @@ input {
 
 .notificationClose {
     color: #ffffff;
-}
-
-.dobError {
-    color: red;
 }
